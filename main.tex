@@ -1,0 +1,116 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{markdown}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{tabu}
+\usepackage{colortbl}
+\usepackage[hidelinks]{hyperref,xcolor}
+\usepackage[backend=biber]{biblatex}
+\usepackage{adjustbox}
+\usepackage{nomencl}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+\addbibresource{projectplan.bib}
+\addbibresource{prr.bib}
+\addbibresource{frr.bib}
+\addbibresource{learn.bib}
+
+
+\title{Learning Report\\Remote Water Sensing using UAVs}
+\author{Robin \textsc{Westerik}}
+\newcommand{\supervisors}{Jan \textsc{Bollen}\\Harry \textsc{Futselaar}}
+
+\newcommand{\timePeriod}{February 2022 - June 2022}
+\newcommand{\sprint}{Professionalise}
+\newcommand{\homepage}{\url{https://github.com/organizations/remotewatersensing/}}
+\date{\today}
+
+\makeatletter{}
+
+\makenomenclature
+\renewcommand{\nomname}{}
+
+\begin{document}
+
+\input{./title.tex}
+
+\tableofcontents
+\pagebreak
+
+\section{Reflection on used methodology}
+In this section, a reflection of the methodology used during my graduation project can be found.\\
+
+\noindent In the plan of action's project activities, there was no description of any specific development method, like scrum or the waterfall model. Instead, a mix of classical and agile development methods were used during the project.\\
+
+While the preference within academics usually go toward tried and tested methods, I found that none of them really fit well with the project's scope and the fact that I am the sole developer.\\
+
+The project consisted of several sprints all conforming to a competence. The sprints were individually managed using kanban \cite{kanban} boards. Due to planning and the reiterative nature of the project, some of these sprints overlapped with each other. How they were planned to overlap could be found in the project schedule.\\
+
+The project was delayed due to my student visa being delayed. This set back the project in the design sprint a couple of weeks. Still, things were done while I was still in the Netherlands which simplified things in Vietnam, like creating the CAD model of the drone.\\
+
+I ended up loosely following the schedule, give or take one week. There was more overlap in the realise and research sprints than I realized. In the end, it worked out, though I should have realised that there was more \\
+
+At my last internship, I reported that I thought I would have benefited from initially taking a little bit more time to organize myself. I am glad to say that there was progress on this side. Software and reports were managed on GitHub \cite{git}, yet publishing on the Saxion Research Cloud Drive, like described in the project plan, proved to be a promise I did not keep to myself. 
+
+Looking back at the communication between parties, I think there should have been more meetings with the saxion supervisors to ensure them about the progress of the project. There were a lot of people involved during this project, so some contacts were watered down without realizing. Some fixed schedules for meetings would probably have fixed is.
+
+I should have included submitting the draft reports on blackboard in my schedule, because I ended up being late for them.
+
+\newpage
+\section{Self reflection on competences}
+In this section, I will make a reflection based on the 8 competences listed in the internship, minor, and graduation guide.
+
+
+\subsection{Analyze and Research}
+During the time I was still in the Netherlands, I primarily worked on my preliminary research report \cite{prr}. In this report, I have shown that I am capable of researching a new field (water quality monitoring) in an adequate manner. I have laid out the issue at hand in the Mekong Delta and formulated a research question. I have taken a look at related studies, and I have learned about water quality parameters and what they mean. This made the process in Vietnam much easier.
+
+While the research question was quite an open question, the answer that was retrieved from it was well defined.
+
+\subsection{Design}
+As seen in the technical report section Design \cite{tr}, I learned a lot about design this graduation project. I learned how to use CAD software as a novice, and how to effectively make mounts through trial and error. In software design I also picked up a few things like how to optimize your code for low resources and how to create software that is easily understandable and editable by other people.
+
+\subsection{Realize}
+From the design, several revisions of prototypes were realized. Unfortunately, there was not a point in the project where the project was working as a whole. My inexperience with creating a suitable mount for the drone has most to do with this. I managed to salvage this however by realising admirable interim results, like shown in the technical report section Design \cite{tr}
+
+With some more time, it would have been possible to create a better end result. I will leave this challenge to future people working on the project.
+
+\subsection{Verify}
+Verification has been done throughout the project. In the technical report section Testing\cite{tr}, verification has been achieved through logged flights and sensor testing. 
+
+In hindsight, I could have probably done more extensive test flights, this would have resulted in more time to improve the sensor package. The reason this did not happen was primarily time constraints given that the project was set some time due to the VISA delay.
+
+\subsection{Advise}
+When beginning the project, I gave and received advice with a number of field experts. An example is the exchange my project advisor Harry Futselaar and I had when beginning this project. Advice is given how to go on with the project in the future in the recommendations.\cite{tr} Moreover, the documentation throughout the project has been written to guide future people working on the project.
+
+
+
+\subsection{Professionalise and Manage}
+Looking at my deliverables, I have shown that I am capable working in a professional environment:
+\begin{itemize}
+    \item Comments in written code are doxygen \cite{doxygen} compliant, so that complete documentation could easily be generated.
+    \item Reports are IEEE compliant and written using \LaTeX{} templates
+    \item Kanban boards are used to keep track of projects.
+    \item Digital diagrams and illustrations are frequently made to explain concepts.
+    \item Git is used for every deliverable
+\end{itemize}
+
+Frequent communication with parties is necessary for a professional environment. Unfortunately, due to the number of people involved in the project, not all of them were contacted as much as I intended to. I had good contact with people that were assisting me at Ton Duc Thang University and PERNAM, but I did not talk to my Saxion supervisors as much as I wanted to. Despite this, I could work well independently enough to return an adequate result.
+
+\newpage
+\section{Personal Development Plan}
+To sum up, my graduation has been really valuable for me, technically, but also culturally. I learned a lot about Vietnam, its people, uses, and work ethic. It has opened my eyes to whole new ways of living. Ho Chi Minh City is an amazing place for people that are into embedded systems, as electronics parts and knowledge are available very locally. It was valuable for me to learn how to make a platform that is easy to use, and easy to edit.\\
+
+To hone my skills further, I will be doing a second minor internship at Robor Electronics in the Netherlands. There I will work on creating an app that helps with drone surveillance.\\
+
+Technical knowledge-wise, I think my development has a solid future. I think however that I should actively pursue working structurally in a team. In high school I participated in a robotics tournament and I learned a lot how to work effectively in a team. I'm also active in a few commissions in my study associations. This helped with me working in a team.\\
+
+Team communication has always been a strong factor for me. I'm a team member that takes joy in leading and giving orders, rather than taking them. I think however I could improve in taking constructive feedback and listening more to other ideas. I tend to give strong opinions and this could be a bad thing when other people are uncomfortable giving their opinions in the same fashion. I especially noticed this with the Smart Solutions Semester.\\
+
+To improve my ability to work in a team, I am considering joining a student project group like Roboteam Twente or Electric Superbike. This will probably be more suitable when I have completed my bachelors.
+
+\newpage
+\printbibliography
+
+\end{document}
